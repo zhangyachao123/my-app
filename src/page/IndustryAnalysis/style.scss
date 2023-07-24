@@ -1,0 +1,52 @@
+.industryAnalysis-container {
+  width: 98%;
+  height: 100%;
+  padding: 0.5rem 1rem 0 1rem;
+  .industryAnalysis-top {
+    width: 100%;
+    height: 49%;
+    display: flex;
+    margin-bottom: 1rem;
+    .industryAnalysis-enterpriseAge {
+      width: 53%;
+      height: 100%;
+      margin-right: 2rem;
+      background-image: var(--theme-echarts-box-bgColor);
+      box-shadow: var(--theme-task-shadow);
+      position: relative;
+      border-radius: var(--theme-echarts-box-raduis);
+      > div:nth-child(1) {
+        height: 45%;
+      }
+      > div:nth-child(2) {
+        height: 55%;
+      }
+      .drop-down-menu {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        cursor: pointer;
+      }
+    }
+    .industryAnalysis-TalentDistribution {
+      width: 45%;
+      height: 100%;
+      background-image: var(--theme-echarts-box-bgColor);
+      box-shadow: var(--theme-task-shadow);
+      border-radius: var(--theme-echarts-box-raduis);
+    }
+  }
+  .industryAnalysis-bottom {
+    width: 100%;
+    height: 49%;
+    display: flex;
+    justify-content: space-between;
+    > div {
+      width: 32%;
+      height: 95%;
+      background-image: var(--theme-echarts-box-bgColor);
+      box-shadow: var(--theme-task-shadow);
+      border-radius: var(--theme-echarts-box-raduis);
+    }
+  }
+}

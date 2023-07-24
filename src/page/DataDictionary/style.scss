@@ -1,0 +1,156 @@
+.dataDictionary-container {
+  width: 95%;
+  height: 94%;
+  padding: 2.5rem;
+  .dataDictionary-query {
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    .dataDictionary-btn {
+      display: flex;
+      > div {
+        width: 5.5rem;
+        text-align: center;
+        line-height: 3rem;
+        border-radius: 0.3rem;
+        color: #fff;
+        font-size: 1rem;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+      .dataDictionary-btn-add {
+        background-color: #1ab394;
+        margin-right: 0.5rem;
+        background-size: 18%;
+        background-image: url(../../images/nav/add.png);
+        background-position-y: 1.04rem;
+        background-position-x: 1rem;
+      }
+      .dataDictionary-btn-remove {
+        background-color: #ed5665;
+        background-size: 25%;
+        background-image: url(../../images/nav/remove.png);
+        background-position-y: 0.9rem;
+        background-position-x: 0.8rem;
+      }
+    }
+    .dataDictionary-main {
+      display: flex;
+      .dataDictionary-select {
+        margin-right: 1rem;
+        .ant-select {
+          width: 15rem;
+          height: 2.7rem;
+          .ant-select-selector {
+            height: 2.7rem;
+            border-radius: 0.2rem;
+            background-color: var(--theme-ant-input-bgColor);
+          }
+          .ant-select-selection-item {
+            font-size: 1rem;
+            color: var(--theme-font-color);
+            line-height: 2.3rem;
+          }
+          .ant-select-arrow {
+            color: var(--theme-font-color);
+          }
+        }
+      }
+      .dataDictionary-input {
+        margin-right: 1rem;
+        .ant-input {
+          width: 13rem;
+          height: 2.7rem;
+          border-radius: 0.3rem;
+          background-color: var(--theme-ant-input-bgColor);
+          color: var(--theme-font-color);
+        }
+      }
+      .dataDictionary-queryButton {
+        width: 5rem;
+        height: 2.8rem;
+        text-align: center;
+        line-height: 2.8rem;
+        border-radius: 0.3rem;
+        color: #fff;
+        background-color: #1d84c6;
+        font-size: 1rem;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        background-size: 25%;
+        background-image: url(../../images/nav/search.png);
+        background-position-y: 0.8rem;
+        background-position-x: 0.6rem;
+      }
+    }
+  }
+  .dataDictionary-table {
+    width: 100%;
+    min-height: calc(100% - 3rem);
+    margin-top: 1rem;
+    .ant-table-cell {
+      font-size: 1rem;
+      color: var(--theme-ant-table-thead-fontColor);
+    }
+    .ant-pagination-item-link {
+      color: var(--theme-font-color);
+    }
+    .ant-table-row:nth-child(even) {
+      background-color: var(--theme-ant-table-row-even-bgColor);
+    }
+    .ant-table-row:nth-child(odd) {
+      background-color: var(--theme-ant-table-row-odd-bgColor);
+    }
+    .ant-table-row-selected > .ant-table-cell {
+      color: #252b4b;
+    }
+    .ant-table-row-selected > .ant-table-cell-row-hover {
+      color: var(--theme-ant-row-selected);
+    }
+    .ant-table-cell-row-hover {
+      background-color: var(--theme-ant-table-row-hover) !important;
+    }
+    .ant-table-thead > tr > th {
+      background-color: var(--theme-ant-table-thead);
+      color: var(--theme-ant-table-thead-fontColor);
+    }
+    .ant-pagination-item > a {
+      color: var(--theme-ant-row-selected);
+    }
+    .ant-pagination-item-active > a {
+      color: #4096ff;
+    }
+    .action-dom {
+      padding: 0;
+    }
+    .action-box {
+      display: flex;
+      width: 7rem;
+      margin: 0 auto;
+      > div {
+        width: 2.5rem;
+        height: 2rem;
+        border-radius: 0.2rem;
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: center;
+        margin-right: 0.3rem;
+        cursor: pointer;
+      }
+    }
+    .action-fix {
+      background-color: #1ab394;
+      background-image: url(../../images/nav/fix.png);
+    }
+    .action-remove {
+      background-color: #f9ab58;
+      background-image: url(../../images/nav/x.png);
+    }
+    .action-push {
+      background-color: #1d84c6;
+      background-image: url(../../images/nav/add.png);
+    }
+  }
+}
+
+

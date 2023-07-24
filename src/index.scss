@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.light {
+  // 数据字典页的颜色变量
+  --theme-font-color: #a4a4a4;
+  --theme-hearder-nav-bgColor: #f3f3f3;
+  --theme-hearder-nav-borderColor: #e6eaec;
+  --theme-hearder-right-bgColor: #f3f3f3;
+  --theme-active-bgColor: #2f4050;
+  --theme-hearder-left-bgColor: #233646;
+  --theme-hearder-left-fontColor: #a0abbc;
+  --theme-ant-input-bgColor: #fff;
+  --theme-ant-table-thead: #fafafa;
+  --theme-ant-table-thead-fontColor: #818485;
+  --theme-ant-table-row-even-bgColor: #fff;
+  --theme-ant-table-row-odd-bgColor: #f7f7f7;
+  --theme-ant-table-row-hover: #f7f7f7;
+  --theme-ant-row-selected: #000;
+  --theme-panel-item-active-bgColor: #a5b0d7;
+  --theme-hearder-icon: url(./images/nav/list.png);
+  --theme-person-icon: url(./images/nav/person_info.png);
+  --theme-theme-icon: url(./images/nav/theme.png);
+  --theme-arrow-left: url(./images/nav/arrow-left-filling.png);
+  --theme-arrow-right: url(./images/nav/arrow-right-filling.png);
+  --theme-close-icon: url(./images/nav/close.png);
+  // 左侧导航页的icon
+  --theme-nav-home: url(./images/nav/home.png);
+  --theme-nav-basic: url(./images/nav/basic.png);
+  --theme-nav-system-ma: url(./images/nav/system_ma.png);
+  --theme-nav-play: url(./images/nav/play.png);
+  --theme-nav-setup: url(./images/nav/setup.png);
+  --theme-nav-system_mo: url(./images/nav/system_mo.png);
+  // 任务管理页
+  --theme-task-font-color: #000;
+  --theme-task-box-bgColor: #f3f3f3;
+  --theme-add-work-task-bgColor: #fff;
+  --theme-tank-my-publishing-bgColor: #fff;
+  --theme-task-shadow: 0px 0px 10px -3px;
+  --theme-task-ant-input-bgColor: #f0f0f0;
+  --theme-task-add-work-task-title-borderColor: #d9d9d9;
+  --theme-task-pushTask: url(./images/pushTask_light.png);
+  --theme-task-publishing: url(./images/publishing_light.png);
+  --theme-task-taskList: url(./images/taskList_light.png);
+  --theme-task-add-work-task-btn: #1ab394;
+  --theme-task-add-work-task-btn2: #1d84c6;
+  --theme-task-table-thead: #fafafa;
+  --theme-task-table-row-even-bgColor: #fff;
+  --theme-task-table-row-odd-bgColor: #f7f7f7;
+  --theme-task-table-border-color: #fff;
+  // 行业分析页
+  --theme-echarts-box-bgColor: none;
+  --theme-echarts-box-raduis: 0.5rem;
+  // 个人中心
+  --theme-person-border-color: #2f4050;
+}
+.dark {
+  // 数据字典页
+  --theme-font-color: #fff;
+  --theme-hearder-nav-bgColor: #20284d;
+  --theme-hearder-nav-borderColor: #12172a;
+  --theme-hearder-right-bgColor: #2b3455;
+  --theme-active-bgColor: #6f6bfe;
+  --theme-hearder-left-bgColor: #121832;
+  --theme-hearder-left-fontColor: #fff;
+  --theme-ant-input-bgColor: #2b3455;
+  --theme-ant-table-thead: #6f6bfe;
+  --theme-ant-table-thead-fontColor: #fff;
+  --theme-ant-table-row-even-bgColor: #252b4b;
+  --theme-ant-table-row-odd-bgColor: #2b3455;
+  --theme-ant-table-row-hover: #252b4b;
+  --theme-ant-row-selected: #fff;
+  --theme-panel-item-active-bgColor: #6f6bfe;
+  --theme-hearder-icon: url(./images/nav/list_dark.png);
+  --theme-person-icon: url(./images/nav/person_info_dark.png);
+  --theme-theme-icon: url(./images/nav/theme_dark.png);
+  --theme-arrow-left: url(./images/nav/arrow-left-filling-dark.png);
+  --theme-arrow-right: url(./images/nav/arrow-right-filling-dark.png);
+  --theme-close-icon: url(./images/nav/close_dark.png);
+  // 左侧导航页的icon
+  --theme-nav-home: url(./images/nav/home_dark.png);
+  --theme-nav-basic: url(./images/nav/basic_dark.png);
+  --theme-nav-system-ma: url(./images/nav/system_ma_dark.png);
+  --theme-nav-play: url(./images/nav/play_dark.png);
+  --theme-nav-setup: url(./images/nav/setup_dark.png);
+  --theme-nav-system_mo: url(./images/nav/system_mo_dark.png);
+  // 任务管理页
+  --theme-task-font-color: #fff;
+  --theme-task-box-bgColor: #060b28;
+  --theme-add-work-task-bgColor: #101942;
+  --theme-tank-my-publishing-bgColor: #1e2d56;
+  --theme-task-shadow: none;
+  --theme-task-ant-input-bgColor: #1e2d56;
+  --theme-task-add-work-task-title-borderColor: #1e2657;
+  --theme-task-pushTask: url(./images/pushTask.png);
+  --theme-task-publishing: url(./images/publishing.png);
+  --theme-task-taskList: url(./images/taskList.png);
+  --theme-task-add-work-task-btn: #60d6f0;
+  --theme-task-add-work-task-btn2: #ff7a00;
+  --theme-task-table-thead: #141941;
+  --theme-task-table-row-even-bgColor: #141941;
+  --theme-task-table-row-odd-bgColor: #141941;
+  --theme-task-table-border-color: #1e2657;
+  // 行业分析页
+  --theme-echarts-box-bgColor: linear-gradient(
+    #3a4272,
+    #343a6a,
+    #2d3361,
+    #262d54
+  );
+  --theme-echarts-box-raduis: 0;
+  // 个人中心
+  --theme-person-border-color: #fff;
+}
+::-webkit-scrollbar {
+  width: 7px;
+  height: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #e0e0e0;
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1280px) and (min-width: 960px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  html {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,63 @@
+.class-myapp-modal {
+  .ant-modal-content {
+    padding: 0;
+    height: 36rem;
+    .ant-modal-close {
+      color: #fff;
+      top: 1.8rem;
+      > span {
+        font-size: 1rem;
+      }
+    }
+    .ant-modal-body {
+      .myapp-modal-title {
+        height: 5rem;
+        line-height: 5rem;
+        text-align: center;
+        background-color: #5f72fd;
+        color: #fff;
+        font-size: 1rem;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+      }
+      .myapp-modal-content {
+        padding: 3rem 6rem 0 6rem;
+        height: 28rem;
+        background-color: var(--theme-ant-input-bgColor);
+        .myapp-modal-item {
+          display: flex;
+          margin-bottom: 1.5rem;
+          .item-text {
+            width: 4rem;
+            text-align: right;
+            line-height: 3rem;
+            color: var(--theme-task-font-color);
+            span {
+              color: red;
+              margin: 0 0.5rem;
+            }
+          }
+          .item-input {
+            width: 15rem;
+            height: 3rem;
+            &::placeholder {
+              color: #908494;
+            }
+          }
+        }
+        .myapp-modal-btn {
+          width: 8rem;
+          height: 3rem;
+          line-height: 3rem;
+          border-radius: 0.5rem;
+          background-color: #5f72fd;
+          text-align: center;
+          color: #fff;
+          margin: 0 auto;
+          margin-top: 2rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
